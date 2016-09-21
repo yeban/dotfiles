@@ -1,0 +1,5 @@
+#compdef o
+
+_arguments \
+  "1:server:($(gvim --serverlist))" \
+  "*:files:_files"
