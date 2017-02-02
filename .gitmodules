@@ -7,3 +7,9 @@
 [submodule ".zsh/bundle/dircolors-solarized"]
 	path = .zsh/bundle/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
+[submodule ".zsh/bundle/ruby-install"]
+	path = .zsh/bundle/ruby-install
+	url = https://github.com/postmodern/ruby-install.git
+[submodule ".zsh/bundle/chruby"]
+	path = .zsh/bundle/chruby
+	url = https://github.com/postmodern/chruby.git

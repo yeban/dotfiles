@@ -1,7 +1,10 @@
-# Setup ruby env using chruby.
-chruby_files=(/usr/local/share/chruby/chruby.sh \
-              /usr/local/share/chruby/auto.sh)
-for chruby_file in $chruby_files; do
-  [[ -f $chruby_file ]] && source $chruby_file
-done
-unset chruby_file chruby_files
+# Provide ruby-install and chruby.
+
+# NOTE:
+#   Use --no-install-deps option of ruby-install if installing on a machine
+#   without root access.
+export PATH="$HOME/.zsh/bundle/ruby-install/bin:$PATH"
+
+source "$HOME/.zsh/bundle/chruby/share/chruby/chruby.sh"
+source "$HOME/.zsh/bundle/chruby/share/chruby/auto.sh"
+export PATH="$HOME/.zsh/bundle/chruby/bin:$PATH"

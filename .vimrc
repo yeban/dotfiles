@@ -95,7 +95,7 @@ set wrap
 set linebreak
 
 set background=light
-colorscheme jellybeans
+colorscheme solarized
 
 "do not update the display when running macros
 set lazyredraw
