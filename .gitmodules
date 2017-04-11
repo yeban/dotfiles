@@ -13,3 +13,6 @@
 [submodule ".zsh/bundle/chruby"]
 	path = .zsh/bundle/chruby
 	url = https://github.com/postmodern/chruby.git
+[submodule ".nvm"]
+	path = .nvm
+	url = https://github.com/creationix/nvm
