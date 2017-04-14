@@ -32,8 +32,6 @@ zstyle ':completion:*:functions' ignored-patterns '_*'
 
 # Path name completion.
 
-cdpath=$HOME
-
 # Ignore current directory and any ancestral directory from completion when
 # path name contains '../'.
 zstyle ':completion:*' ignore-parents 'parent pwd ..'

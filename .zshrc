@@ -42,15 +42,6 @@ bindkey . rationalize-dot
 alias df='df -h'
 alias du='du -hs'
 
-alias pi='sudo aptitude install'
-alias pr='sudo aptitude remove'
-alias pp='sudo aptitude purge'
-alias pud='sudo aptitude update'
-alias pug='sudo aptitude safe-upgrade'
-alias pufg='sudo aptitude full-upgrade'
-alias pse='aptitude search'
-alias psh='aptitude show'
-
 alias halt='sudo shutdown -h now'
 alias reboot='sudo reboot'
 
