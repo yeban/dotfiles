@@ -1,3 +1,9 @@
-[[ "$1" =~ "VIM" ]] && _vim_server_name="$1" && shift
-[[ -z "$_vim_server_name" ]] && _vim_server_name="VIM"
-command gvim --servername $_vim_server_name --remote-tab-silent $@
+# Run vim if we are running under ssh.
+if [[ "$SESSION_TYPE" == 'ssh' ]]; then
+  command vim
+else
+  # Otherwise, use vim server.
+  [[ "$1" =~ "VIM" ]] && _vim_server_name="$1" && shift
+  [[ -z "$_vim_server_name" ]] && _vim_server_name="VIM"
+  command gvim --servername $_vim_server_name --remote-tab-silent $@
+fi

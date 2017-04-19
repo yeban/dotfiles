@@ -15,7 +15,7 @@ remove_if_symlink =							\
 	fi;
 
 candidates =	\
-.zshrc .zsh	\
+.zshenv .zshrc .zsh	\
 .vim .vimrc	\
 .gitconfig .gittemplate	\
 .ruby-version .irbrc .gemrc
