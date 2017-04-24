@@ -32,6 +32,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'Dockerfile' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'slim-template/vim-slim',  { 'for': 'slim'}
+Plug 'rdolgushin/groovy.vim',   { 'for': 'groovy' }
 Plug 'groenewege/vim-less',     { 'for': 'less' }
 Plug 'vim-scripts/jQuery',      { 'for': 'javascript' }
 Plug 'tpope/vim-markdown',      { 'for': 'markdown' }
