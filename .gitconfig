@@ -31,6 +31,8 @@
 	ui = auto
 [branch]
 	autosetuprebase = always
+[branch "master"]
+	mergeoptions = --no-ff --no-commit
 [status]
 	short = true
 	branch = true
