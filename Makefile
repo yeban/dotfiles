@@ -23,7 +23,6 @@ candidates =	\
 all::
 	@$(foreach file,$(candidates),$(symlink_to_home))
 	git submodule update --init --recursive
-	bundle
 
 update:
 	git submodule foreach 'git checkout master; git pull'
