@@ -15,7 +15,7 @@ remove_if_symlink =							\
 	fi;
 
 candidates =	\
-.zshenv 	\
+.hyper.js .zshenv	\
 .vim .vimrc	\
 .gitconfig .gittemplate	\
 .ruby-version .irbrc .gemrc
