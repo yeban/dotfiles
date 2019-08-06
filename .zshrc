@@ -22,6 +22,21 @@ fi
 # to the running gvim server.
 export VISUAL="gvim --remote-tab-wait-silent"
 
-alias du="du -hs"
+### Aliases
+alias df='df -h'
+alias du='du -hs'
 
-echo $ZDOTDIR
+# For sysadmin work (Linux only)
+alias halt='sudo shutdown -h now'
+alias reboot='sudo reboot'
+
+# Yank (on Mac)
+alias -g Y='| pbcopy'
+
+# Expands to project root
+alias -g R='$(git rev-parse --show-toplevel 2> /dev/null)'
+
+# Automatically display system resource usage summary for commands that took
+# more than 5s to run.
+REPORTTIME=5
+
