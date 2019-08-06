@@ -1,61 +1,27 @@
-# Hooks
-typeset -ga chpwd_functions
-typeset -ga precmd_functions
-typeset -ga preexec_functions
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Anurag Priyam <a.priyam@icloud.com>
+#
 
-# Initialize convinience mappings for ANSI colors codes.
-autoload -Uz colors
-colors
+# Indicate that we are running inside a 256 colour terminal.
+export TERM="xterm-256color"
 
-# zsh options; man zshoptions
-setopt extendedglob
-setopt notify
-setopt correct
-setopt interactivecomments
-setopt multios
-
-setopt autocd
-setopt autopushd
-setopt pushdignoredups
-setopt pushdsilent
-
-# Let background jobs run even after shell is closed.
-setopt nohup
-
-# Automatically display system resource usage summary for commands that took
-# more than 5s to run.
-REPORTTIME=5
-
-unsetopt flowcontrol
-unsetopt beep
-
-
-### Key bindings ###
-bindkey -e
-bindkey '^[/' undo
-
-zle -N rationalize-dot
-bindkey . rationalize-dot
-
-
-### Aliases
-alias df='df -h'
-alias du='du -hs'
-
-alias halt='sudo shutdown -h now'
-alias reboot='sudo reboot'
-
-alias -g Y='| xclip && xclip -o | xclip -se c'
-alias -g R='$(git rev-parse --show-toplevel 2> /dev/null)'
-
-rc=$HOME/.zsh
-if [ -f $rc/*([1]) ]; then
-  for script in $rc/*; do
-    source $script
-  done
+# Source Prezto
+if [[ -s "${ZDOTDIR:-$HOME}/prezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/prezto/init.zsh"
 fi
 
-fpath=($HOME/.zsh/functions $fpath)
-autoload -U $HOME/.zsh/functions/*(:t)
+# Enable iTerm shell integration
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && \
+#  source "${HOME}/.iterm2_shell_integration.zsh"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# Change behaviour of the `e` alias: send files
+# to the running gvim server.
+export VISUAL="gvim --remote-tab-wait-silent"
+
+alias du="du -hs"
+
+echo $ZDOTDIR
