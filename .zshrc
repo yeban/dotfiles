@@ -14,10 +14,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/prezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/prezto/init.zsh"
 fi
 
-# Enable iTerm shell integration
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && \
-#  source "${HOME}/.iterm2_shell_integration.zsh"
-
 ### Aliases
 alias df='df -h'
 alias du='du -hs'
