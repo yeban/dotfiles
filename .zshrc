@@ -18,10 +18,6 @@ fi
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && \
 #  source "${HOME}/.iterm2_shell_integration.zsh"
 
-# Change behaviour of the `e` alias: send files
-# to the running gvim server.
-export VISUAL="gvim --remote-tab-wait-silent"
-
 ### Aliases
 alias df='df -h'
 alias du='du -hs'
