@@ -135,9 +135,6 @@ zstyle ':prezto:module:prompt' theme 'pure'
 # Ruby
 #
 
-# Enable bundled chruby and ruby-install.
-zstyle ':prezto:module:ruby' chruby 'yes'
-
 # Auto switch the Ruby version on directory change.
 zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
 
