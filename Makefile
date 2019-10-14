@@ -18,7 +18,7 @@ candidates =	\
 .hyper.js .zshenv	\
 .vim .vimrc	\
 .gitconfig .gittemplate	\
-.ruby-version .irbrc .gemrc
+.irbrc .gemrc
 
 all::
 	@$(foreach file,$(candidates),$(symlink_to_home))
