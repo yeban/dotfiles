@@ -2,4 +2,4 @@
 .vim/sessions
 .zcompdump
 .zcompdump.zwc
-.zhistory
+.zsh_history

@@ -1,12 +1,11 @@
 # Defines environment variables.
 
-# Read zshrc files from ~/dotfiles
+# Read config files from ~/dotfiles
 ZDOTDIR="$HOME/dotfiles"
 
-# Ensure that a non-login, non-interactive shell has a defined environment.
-# Taken from prezto's zshenv
-if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprofile"
+# Source prezto's zshenv
+if [[ -s "${ZDOTDIR:-$HOME}/prezto/runcoms/zshenv" ]]; then
+  source "${ZDOTDIR:-$HOME}/prezto/runcoms/zshenv"
 fi
 
 # Are we running under ssh?
@@ -17,6 +16,3 @@ else
     sshd|*/sshd) SESSION_TYPE=ssh;;
   esac
 fi
-
-# Editor command.
-export EDITOR='o'

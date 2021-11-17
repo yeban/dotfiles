@@ -1,5 +1,5 @@
 [user]
-	name  = Anurag Priyam
+	name =  Anurag Priyam
 [alias]
 	alias        = "!sh -c '[ $# = 2 ] && git config --global alias.\"$1\" \"$2\" && exit 0 || git config --get-regexp \"alias.*\" | colrm 1 6 | sed \"s/[ ]/ = /\" >&2 && exit 0' -"
 	a            = add

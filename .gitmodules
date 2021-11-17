@@ -18,4 +18,4 @@
 	url = https://github.com/creationix/nvm
 [submodule "prezto"]
 	path = prezto
-	url = https://github.com/yeban/prezto
+	url = https://github.com/sorin-ionescu/prezto
