@@ -19,3 +19,6 @@
 [submodule "prezto"]
 	path = prezto
 	url = https://github.com/sorin-ionescu/prezto
+[submodule "prezto-external-modules/autoenv"]
+	path = prezto-external-modules/autoenv
+	url = https://github.com/Tarrasch/zsh-autoenv.git
