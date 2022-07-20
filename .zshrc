@@ -14,6 +14,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/prezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/prezto/init.zsh"
 fi
 
+# Ignore current directory and any ancestral directory from completion when
+# path name contains '../'.
+zstyle ':completion:*' ignore-parents 'parent pwd ..'
+
 ### Aliases
 alias df='df -h'
 alias du='du -hs'
