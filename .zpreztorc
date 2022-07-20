@@ -34,6 +34,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'ruby' \
   'chruby' \
+  'python' \
   'tmux' \
   'rsync' \
   'prompt' \
@@ -104,6 +105,13 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Auto switch the Ruby version on directory change.
 zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
+
+#
+# Python
+#
+
+# Auto switch the Python virtualenv on directory change.
+zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
 
 #
 # Utility
