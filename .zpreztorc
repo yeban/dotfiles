@@ -28,15 +28,14 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'osx' \
   'completion' \
   'fasd' \
-  'osx' \
   'git' \
   'chruby' \
   'ruby' \
   'python' \
   'prompt' \
-  'homebrew' \
   'autols' \
   'docker' \
   'auto-git-status' \
