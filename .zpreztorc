@@ -33,6 +33,7 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'git' \
   'ruby' \
+  'chruby' \
   'tmux' \
   'rsync' \
   'prompt' \
@@ -96,6 +97,13 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the terminal multiplexer title format.
 # zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
+
+#
+# Ruby
+#
+
+# Auto switch the Ruby version on directory change.
+zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
 
 #
 # Utility

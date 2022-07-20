@@ -22,3 +22,9 @@
 [submodule "prezto-external-modules/autoenv"]
 	path = prezto-external-modules/autoenv
 	url = https://github.com/Tarrasch/zsh-autoenv.git
+[submodule "prezto-custom-modules/chruby/external/chruby"]
+	path = prezto-custom-modules/chruby/external/chruby
+	url = https://github.com/postmodern/chruby.git
+[submodule "prezto-custom-modules/chruby/external/ruby-install"]
+	path = prezto-custom-modules/chruby/external/ruby-install
+	url = https://github.com/postmodern/ruby-install.git
