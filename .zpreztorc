@@ -35,10 +35,7 @@ zstyle ':prezto:load' pmodule \
   'chruby' \
   'ruby' \
   'python' \
-  'tmux' \
-  'rsync' \
   'prompt' \
-  'archive' \
   'homebrew' \
   'autols' \
   'docker' \
