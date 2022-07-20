@@ -32,8 +32,8 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'osx' \
   'git' \
-  'ruby' \
   'chruby' \
+  'ruby' \
   'python' \
   'tmux' \
   'rsync' \
